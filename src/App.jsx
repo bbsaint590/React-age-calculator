@@ -1,28 +1,12 @@
-import './App.css'
-import Button from './components/Button'
-import DateOfBirth from './components/DateOfBirth'
-import AgeCalculator from './components/Input'
-import Input from './components/Input'
-import Output from './components/Output'
+import React from 'react';
+import AgeCalculator from './components/AgeCalculator';
 
 function App() {
-
-  const [inputValue, setinputValue] = useState ("")
+    return (
+        <div className="flex justify-center items-center min-h-screen bg-gray-800">
+            <AgeCalculator />
+        </div>
+    );
 }
 
-<div class="bg-slate-400 w-full h-full">
-
-  <div class="bg-white rounded p-6 pr-36 w-full max-w-3xl mx-auto mt-3">
-    {/* <Input setValue={setinputValue} handleChange={set} /> */}
-    {/* <Button text='Go' />
-    <Output />
-    <AgeCalculator /> */}
-    <DateOfBirth setValue={setInputValue} handleDayChange={set} value={inputValue} />
-    
-  
-
-  </div>
-</div>
-
-
-export default App
+export default App;

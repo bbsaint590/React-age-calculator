@@ -1,29 +1,20 @@
-const Input = ({setValue}) => {
+import React from 'react';
+
+const Input = ({ label, setValue }) => {
     const handleChange = (e) => {
-        setValue(e.target.value)
-    }
+        setValue(e.target.value);
+    };
 
     return (
+        <div className="mb-4">
+            <label className="block text-yellow-500 font-bold mb-2">{label}</label>
+            <input
+                type="number"
+                onChange={handleChange}
+                className="w-full p-2 border border-yellow-500 rounded bg-gray-800 text-yellow-500 focus:outline-none focus:border-yellow-600"
+            />
+        </div>
+    );
+};
 
- <form class="flex justify-between">
-    <div>
-        <label className="block" htmlFor="dd">Day</label>
-        <input type="text" onChange={handleChange} id="dd" className="border border-slate-200" />
-    </div>
-    <div>
-        <label className="block" htmlfor="mm">Month</label>
-        <input type="text" onChange={handleChange} id="mm" className="border border-slate-200" />
-    </div>
-    <div>
-        <label className="block" htmlfor="yy">Year</label>
-        <input type="text" onChange={handleChange} id="yy" className="border border-slate-200" />
-    </div>
-</form> 
-    )
-    }
-
-export default Input
-
-
-// <label className="amount" htmlFor="amount">{input}</label>
-// <input className="amount" type="number" name="amount" />
+export default Input;
