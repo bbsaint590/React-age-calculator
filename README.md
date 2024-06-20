@@ -4,8 +4,13 @@ This project is a web application built using React that calculates a person's a
 
 ## Description
 
-The React Age Calculator is a simple and intuitive web application where users can input their date of birth to calculate their age. This project demonstrates the use of React for creating interactive user interfaces and managing state.
+The React Age Calculator is a simple and intuitive web application where users can input their date of birth to calculate their age. This project demonstrates the use of React for creating components to build interactive user interfaces and managing state.
 
+## Features
+
+- **Dynamic Age Calculation:** Calculate age in years, months, and days.
+- **Responsive Design:** User-friendly interface with a responsive design using Tailwind CSS.
+- **State Management:** Utilizes React's `useState` hook to manage form input and calculation results.
 ## Getting Started
 
 ### Dependencies
@@ -31,24 +36,20 @@ To get started with the React Age Calculator project, follow these steps:
 
 3. **Install the dependencies:**
 
-    Using npm:
-
     ```bash
     npm install
     ```
     
 4. **Start the development server:**
 
-    Using npm:
-
     ```bash
-    npm start
+    npm run dev
     ```
-    This will start a development server at [http://localhost:3000](http://localhost:3000).
+    This will start a development server at [(http://localhost:5173/)).
 
 5. **Explore the project:**
 
-    Open your web browser and navigate to [http://localhost:3000](http://localhost:3000) to use the React Age Calculator application.
+    Open your web browser and navigate to [(http://localhost:5173/)) to view the React Reviews App.
 
 ## Authors
 
@@ -61,3 +62,4 @@ To get started with the React Age Calculator project, follow these steps:
 ## Acknowledgements
 
 - React: [https://reactjs.org](https://reactjs.org)
+- Tailwind CSS: [https://tailwindcss.com](https://tailwindcss.com)
